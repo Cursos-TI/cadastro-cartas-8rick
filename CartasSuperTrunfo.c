@@ -6,7 +6,7 @@
 
 int main() {
   // Área para definição das variáveis para armazenar as propriedades das cidades
-  
+
   //Variáveis carta 01:
   char Estado1;
   char CodigoCarta1[3];
@@ -16,13 +16,22 @@ int main() {
   float PIB1;
   int PontoTuristico1;
 
+  //Variáveis carta 02:
+   char Estado2;
+   char CodigoCarta2[3];
+   char Cidade2[20];
+   int poupulacao2;
+   float Km2;
+   float PIB2;
+   int PontoTuristico2;
+
   // Área para entrada de dados
 
   //Carta 01
-  printf("Carta 01: \n");
+  printf("Carta 01: \n\n");
 
   printf("Digite uma letra de 'A' a 'H'(representando um dos oito estados): \n");
-  scanf("%c", &Estado1);
+  scanf(" %c", &Estado1);
 
   printf("Digite o código da carta, a letra do estado seguido de 01 a 04(ex: A01, B03): \n");
   scanf("%s", CodigoCarta1);
@@ -33,14 +42,39 @@ int main() {
   printf("Digite o número de habitantes da cidade: \n");
   scanf("%d", &poupulacao1);
 
-  printf("igite a área da cidade em quilômetros quadrados: \n");
-  scanf("%f", Km1);
+  printf("Digite a área da cidade em quilômetros quadrados: \n");
+  scanf("%f", &Km1);
 
   printf("Digite o O Produto Interno Bruto da cidade: \n");
-  scanf("%f", PIB1);
+  scanf("%f", &PIB1);
 
   printf("Digite a quantidade de pontos turísticos na cidade: \n");
-  scanf("%d", PontoTuristico1);
+  scanf("%d", &PontoTuristico1);
+
+  
+  //Carta 02
+  printf("\nCarta 02: \n\n");
+
+  printf("Digite uma letra de 'A' a 'H'(representando um dos oito estados): \n");
+  scanf(" %c", &Estado2);
+
+  printf("Digite o código da carta, a letra do estado seguido de 01 a 04(ex: A01, B03): \n");
+  scanf("%s", CodigoCarta2);
+
+  printf("Digite o nome da cidade: \n");
+  scanf("%s", Cidade2);
+
+  printf("Digite o número de habitantes da cidade: \n");
+  scanf("%d", &poupulacao2);
+
+  printf("Digite a área da cidade em quilômetros quadrados: \n");
+  scanf("%f", &Km2);
+
+  printf("Digite o O Produto Interno Bruto da cidade: \n");
+  scanf("%f", &PIB2);
+
+  printf("Digite a quantidade de pontos turísticos na cidade: \n");
+  scanf("%d", &PontoTuristico2);
   
 
 
